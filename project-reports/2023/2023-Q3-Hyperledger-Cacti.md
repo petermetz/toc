@@ -36,7 +36,10 @@ working on some of the vulnerable dependency upgrades and we plan on getting a s
 1. Most of our traffic comes from Discord (the chat)
 2. The daily pair programming calls are in place and questions are being answered as they come up most of the time.
 3. There is constant new development happening, we are actually being overloaded a little bit with pull requests because the CI is robust but slow-ish (apologies to Ry - we are hard at work on improving dependency caching and refactoring the CI to avoid duplicate work as much as possible but this is still in progress)
-4. From the technical perspective: We are focusing on the integration of the Cactus and Weaver code-bases and also on adding support for new ledgers such as Corda v5.
+4. Worked on a draft for release management. This is an [open PR](https://github.com/hyperledger/cacti/pull/2337), and is currently being tested and evaluated.
+5. Using the above release management draft as a guide, the Weaver packages were published under the Cacti namespace and appropriately tagged, with automated publishing configured through Github Actions.
+6. The Weaver Lab repo was being maintained and augmented in minor ways because a client project had an active dependency on it. We would periodically sync those changes to the Cacti repo. That process has now concluded, and we have frozen the Weaver repo to further additions, and (thanks to Ry Jones) moved all open Weaver issues to the Cacti repo.
+7. From a technical perspective, we started working on integration of the Cactus and Weaver code-bases, adding support for new ledgers such as Corda v5, ledger state proof generation and validation protocols for Besu and Ethereum, integration with DID registries, and conformity with Internet community standards.
 
 
 # Current Plans
@@ -47,7 +50,10 @@ working on some of the vulnerable dependency upgrades and we plan on getting a s
 2. Corda v5 support
 3. Polkadot support
 4. New documentation site
-5. We plan to issue v2.0.0 this quarter which will be a big deal!
+5. Ledger views and proofs for Besu and Ethereum
+6. Support for IETF-standard Secure Asset Transfer Protocol (SATP) using Relays and Node Server
+7. Syncing identities across permissioned networks using public DID registries and VCs
+8. We plan to issue v2.0.0 this quarter which will be a big deal!
 
 
 # Maintainer Diversity
