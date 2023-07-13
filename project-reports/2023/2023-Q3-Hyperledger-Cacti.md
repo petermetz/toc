@@ -53,7 +53,8 @@ working on some of the vulnerable dependency upgrades and we plan on getting a s
 5. Ledger views and proofs for Besu and Ethereum
 6. Support for IETF-standard Secure Asset Transfer Protocol (SATP) using Relays and Node Server
 7. Syncing identities across permissioned networks using public DID registries and VCs
-8. We plan to issue v2.0.0 this quarter which will be a big deal!
+8. Performance measurement and benchmarking of cross-chain operations
+9. We plan to issue v2.0.0 this quarter which will be a big deal!
 
 
 # Maintainer Diversity
