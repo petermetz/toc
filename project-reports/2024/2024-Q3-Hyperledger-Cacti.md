@@ -11,8 +11,9 @@ grand_parent: Project Updates
 - The project is in good health!
 - Multiple mentorship projects are underway.
 - `v2.0.0-rc.2` was released a couple weeks ago and `v2.0.0-rc.3` is not far behind (hopefully next week)!
-- Major efforts are underway to integrate the codebase further and we also continue the interoperability protocol 
-standardization by implementing the candidate IETF SATP specification using different combinations of Cacti modules.
+- Major efforts are underway to integrate the codebase further
+- We continue to promote interoperability protocol standardization by contributing to, and implementing, the candidate [IETF SATP specification](https://datatracker.ietf.org/doc/draft-ietf-satp-core/) using different combinations of Cacti modules. We conducted a [workshop on May 23, 2024](https://wiki.hyperledger.org/display/events/Standardizing+DLT+Interoperation%3A+Implementing+IETF+Secure+Asset+Transfer+Protocol+in+Hyperledger+Cacti) to discuss the protocol and demonstrate the associated Cacti capabilities.
+- Enabled the [OpenSSF Scorecard](https://scorecard.dev/viewer/?uri=github.com%2Fhyperledger%2Fcacti) for the project.
 
 LFX Insights (Beta) Link:
 https://insights.lfx.linuxfoundation.org/foundation/hyp/overview/github?project=cacti&routedFrom=Github&bestPractice=false
@@ -28,23 +29,20 @@ No questions for the TOC.
 
 # Overall Activity in the Past Quarter
 
-- Most of our activity comes from the Discord channel. The daily pair programming calls are well
-attended by mentees, existing contributors and would-be contributors alike.
+- Most of our activity comes from the Discord channel. The daily pair programming calls are well attended by mentees, existing contributors and would-be contributors alike.
 - Questions are answered in a mostly timely fashion though it's not perfect we do make a conscious effort to respond quickly.
-- The CI performance optimizations are still on-going, but we are close to having a solution to dynamic diff analysis
-which makes it so that our CI jobs only run tests of a package that had changes in itself or its dependency tree of packages.
+- The CI performance optimizations are still ongoing, but we are close to having a solution to dynamic diff analysis which makes it so that our CI jobs only run tests of a package that had changes in itself or its dependency tree of packages.
 - We now have more than 60 packages in the monorepo total.
 - The release automation that published packages to npmjs.com and ghcr.io has been fixed, we no longer have to manually run publishing scripts.
-- New features are being worked on as we speak. Most of the development here focuses on IETF-SATP
-
+- New features are being worked on as we speak. Most of the development here focuses on IETF-SATP.
 
 # Current Plans
 
 1. Work is being done on a Cacti example that combines the Harmonia Lab smart contracts and the Cacti Corda JVM connector plugin together. Once this is ready, we hope to show it off to the Harmonia Lab maintainers and seek further partnership and collaboration between the two groups.
 2. Cactus & Weaver Integration - we work on this ourselves and also have a mentorship project underway for the same.
-3. Documentation revamp and updating process
-4. There are dozens of branches with build process improvements and test stability fixes (we have flaky tests that are 
-too resource intensive for the free tier GitHub runners but we can't move to the paid tier due to our CI taking 8 to 10 hours of compute time to run)
+3. Documentation revamp and updating process is ongoing.
+4. There are dozens of branches with build process improvements and test stability fixes (we have flaky tests that are too resource intensive for the free tier GitHub runners but we can't move to the paid tier due to our CI taking 8 to 10 hours of compute time to run).
+5. We are working on improving our OpenSSF Scorecard numbers.
 
 # Maintainer Diversity
 
